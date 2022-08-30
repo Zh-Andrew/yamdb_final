@@ -8,17 +8,19 @@ from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework_simplejwt.tokens import AccessToken
+from reviews.models import Category, Genre, Review, Title, User
 
 from api_yamdb.settings import ADMIN_EMAIL
-from reviews.models import Category, Genre, Review, Title, User
+
 from .filters import TitleFilter
 from .mixins import ListCreateDestroyViewSet
 from .permissions import (IsAdminModeratorAuthorOnly, IsAdminOnly,
                           IsAdminOrReadOnly)
-from .serializers import (
-    AdminSerializer, CategorySerializer, CommentSerializer, GenresSerializer,
-    ObtainTokenSerializer, ReviewSerializer, SignupSerializer,
-    TitlesPostSerializer, TitlesSerializer, UserSerializer)
+from .serializers import (AdminSerializer, CategorySerializer,
+                          CommentSerializer, GenresSerializer,
+                          ObtainTokenSerializer, ReviewSerializer,
+                          SignupSerializer, TitlesPostSerializer,
+                          TitlesSerializer, UserSerializer)
 
 
 class UserViewSet(viewsets.ModelViewSet):
