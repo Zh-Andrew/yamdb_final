@@ -1,4 +1,4 @@
-https://github.com/Zh-Andrew/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg
+![yamdb_workflows](https://github.com/Zh-Andrew/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 # Описание
 ## Проект "YaMDb"
 
