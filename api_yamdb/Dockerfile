@@ -8,6 +8,6 @@ RUN pip3 install -r requirements.txt --no-cache-dir
 
 COPY . .
 
-RUN chmod u+x ../start.sh
+RUN chmod ugo+x ../start.sh
 
 CMD ["./start.sh"]
